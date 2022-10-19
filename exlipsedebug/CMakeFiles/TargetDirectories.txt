@@ -1,3 +1,0 @@
-/home/srq/code/opde/exlipsedebug/CMakeFiles/rebuild_cache.dir
-/home/srq/code/opde/exlipsedebug/CMakeFiles/opde.dir
-/home/srq/code/opde/exlipsedebug/CMakeFiles/edit_cache.dir

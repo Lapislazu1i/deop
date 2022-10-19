@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/srq/code/opde/exlipsedebug",
-  "command": "/usr/bin/c++   -isystem /usr/local/include  -g   -o CMakeFiles/opde.dir/main.cxx.o -c /home/srq/code/opde/main.cxx",
-  "file": "/home/srq/code/opde/main.cxx"
-}
-]

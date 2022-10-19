@@ -11,8 +11,8 @@ int main()
     // ssl_bio();
     // ans1_bio();
     // base64t_bio();
-    signedt();
-    rsat();
-    printf("%d\n", sizeof("不不"));
+    // signedt();
+    // rsat();
+    base64_bio_f_test();
     std::cout << "hello1" << '\n';
 }
