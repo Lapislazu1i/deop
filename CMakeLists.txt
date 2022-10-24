@@ -14,19 +14,19 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 #比如:aux_source_directory(${CMAKE_SOURCE_DIR} DIR)  将${CMAKE_SOURCE_DIR}目录下，也就是最顶级目录下所有的.cpp文件放入DIR变量中，后面的add_executable就可以很简化
 #    add_executable(hello_world ${DIR})
  
-find_package(OpenSSL REQUIRED)
-if(OPENSSL_FOUND)
-  include_directories(${OPENSSL_INCLUDE_DIRS})
-  message(STATUS "OpenSSL Found!")
-endif()
+#find_package(OpenSSL REQUIRED)
+#if(OPENSSL_FOUND)
+#  include_directories(${OPENSSL_INCLUDE_DIRS})
+#  message(STATUS "OpenSSL Found!")
+#endif()
  
 #设定头文件路径
-#include_directories(./vender/include)
+include_directories(./vender/include)
 #include_directories("路径1"  “路径2”...)
  
  
 #设定链接库的路径（一般使用第三方非系统目录下的库）
-#link_directories(./vender/lib)
+link_directories(./vender/lib)
 #link_directories(./vender/lib)
 #link_directories("路径1"  “路径2”...)
  
@@ -50,6 +50,11 @@ add_executable(opde ${SRC_FILES} )
  
 target_link_libraries(opde
 pthread
-OpenSSL::Crypto
-OpenSSL::SSL
-dl)#就是g++ 编译选项中-l后的内容，不要有多余空格
+#OpenSSL::Crypto
+#OpenSSL::SSL
+ssl.a
+crypto.a
+z.a
+dl
+)#就是g++ 编译选项中-l后的内容，不要有多余空格
+
